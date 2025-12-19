@@ -34,7 +34,8 @@ def build_feature_table():
             if not os.path.isfile(song_path):
                 continue
         
-            song = f"{album}_{os.path.splitext(filename)[0]}"
+            song = os.path.splitext(filename)[0]
+
 
         
             print(f"  Processing song: {song}")
